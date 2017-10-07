@@ -1,194 +1,128 @@
 lookup = {
     "cpu": {
-        1: "name",
         2: "speed",
         3: "cores",
-        4: "tdp",
-        5: "ratings",
-        6: "price"
+        4: "tdp"
     },
     "cpu-cooler": {
-        1: "name",
         2: "fan-rpm",
-        3: "noise level",
-        4: "ratings",
-        5: "price"
+        3: "noise level"
     },
     "motherboard": {
-        1: "name",
         2: "socket",
         3: "form-factor",
         4: "ram-slots",
-        5: "max-ram",
-        6: "ratings",
-        7: "price"
+        5: "max-ram"
     },
     "memory": {
-        1: "name",
         2: "speed",
         3: "type",
         4: "cas",
         5: "modules",
         6: "size",
-        7: "price/gb",
-        8: "ratings",
-        9: "price"
+        7: "price/gb"
     },
     "internal-hard-drive": {
-        1: "name",
         2: "series",
         3: "form",
         4: "type",
         5: "capacity",
         6: "cache",
-        7: "price/gb",
-        8: "ratings",
-        9: "price"
+        7: "price/gb"
     },
     "video-card": {
-        1: "name",
         2: "series",
         3: "chipset",
         4: "memory",
-        5: "core-clock",
-        6: "ratings",
-        7: "price"
+        5: "core-clock"
     },
     "power-supply": {
-        1: "name",
         2: "series",
         3: "form",
         4: "efficiency",
         5: "watts",
-        6: "modular",
-        7: "ratings",
-        8: "price"
+        6: "modular"
     },
     "case": {
-        1: "name",
         2: "type",
         3: "ext525b",  # EXTERNAL 5.25" BAYS
         4: "int35b",   # INTERNAL 3.5" BAYS
-        5: "power-supply",
-        6: "ratings",
-        7: "price"
+        5: "power-supply"
     },
     "case-fan": {
-        1: "name",
         2: "color",
         3: "size",
         4: "rpm",
         5: "airflow",
-        6: "noise-level",
-        7: "ratings",
-        8: "price"
+        6: "noise-level"
     },
     "fan-controller": {
-        1: "name",
         2: "form-factor",
         3: "channels",
-        4: "channel-wattage",
-        5: "ratings",
-        6: "price"
+        4: "channel-wattage"
     },
     "thermal-paste": {
-        1: "name",
-        2: "amount",
-        3: "ratings",
-        4: "price"
+        2: "amount"
     },
     "optical-drive": {
-        1: "name",
         2: "bd",
         3: "dvd",
         4: "cd",
         5: "bd-write",
         6: "dvd-write",
-        7: "cd-write",
-        8: "ratings",
-        9: "price"
+        7: "cd-write"
     },
     "sound-card": {
-        1: "name",
         2: "chipset",
         3: "channels",
         4: "bits",
         5: "snr",
-        6: "sample-rate",
-        7: "ratings",
-        8: "price"
+        6: "sample-rate"
     },
     "wired-network-card": {
-        1: "name",
         2: "interface",
-        3: "ports",
-        4: "ratings",
-        5: "price"
+        3: "ports"
     },
     "wireless-network-card": {
-        1: "name",
         2: "interface",
-        3: "protocols",
-        4: "ratings",
-        5: "price"
+        3: "protocols"
     },
     "monitor": {
-        1: "name",
         2: "resolution",
         3: "size",
         4: "response-time",
-        5: "ips",
-        6: "ratings",
-        7: "price"
+        5: "ips"
     },
     "external-hard-drive": {
-        1: "name",
         2: "series",
         3: "type",
         4: "capacity",
-        5: "price/gb",
-        6: "ratings",
-        7: "price"
+        5: "price/gb"
     },
     "headphones": {
-        1: "name",
         2: "type",
         3: "microphone",
         4: "wireless",
-        5: "frequency-response",
-        6: "ratings",
-        7: "price"
+        5: "frequency-response"
     },
     "keyboard": {
-        1: "name",
         2: "style",
         3: "color",
         4: "switch-type",
-        5: "backlit",
-        6: "ratings",
-        7: "price"
+        5: "backlit"
     },
     "mouse": {
-        1: "name",
         2: "tracking",
         3: "connection",
-        4: "color",
-        5: "ratings",
-        6: "price"
+        4: "color"
     },
     "speakers": {
-        1: "name",
         2: "configuration",
         3: "total-wattage",
-        4: "frequency-response",
-        5: "ratings",
-        6: "price"
+        4: "frequency-response"
     },
     "ups": {
-        1: "name",
         2: "capacity-w",
-        3: "capacity-va",
-        4: "ratings",
-        5: "price"
+        3: "capacity-va"
     }
 }

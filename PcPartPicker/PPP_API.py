@@ -1,6 +1,6 @@
 from json import loads as jsonloads
-from bs4 import BeautifulSoup
 from ._PPP_data import lookup
+from bs4 import BeautifulSoup
 from requests import get
 
 base_url = "https://uk.pcpartpicker.com/products/{}/fetch?page={}"
@@ -38,10 +38,16 @@ def get_part(part_type, single_page=False):
         soup = _get_page(part_type, page_num)
         for row in soup.findAll("tr"):
             row_elements = {}
-            for count, x in enumerate(row):
+            for count, value in enumerate(row):
+                text = value.get_text().strip()
                 try:
-                    row_elements[lookup[part_type][count]] =  x.get_text().strip()
+                    row_elements[lookup[part_type][count]] = text
                 except KeyError:
-                    pass
+                    if count == 1:
+                        row_elements["name"] = text
+                    elif count == len(row)-2:
+                        row_elements["price"] = text
+                    elif count == len(row)-3:
+                        row_elements["ratings"] = text.replace("(", "").replace(")", "")
             parsed_html.append(row_elements)
     return parsed_html
