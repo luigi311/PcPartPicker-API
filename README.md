@@ -5,7 +5,7 @@ Python3 API for getting part information from [PcPartPicker](https://uk.pcpartpi
 Examples:
 
 - Save all cpu data to `.json` file
-	```
+	```python
 	from PcPartPicker import PPP_API
 	import json
 
