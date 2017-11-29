@@ -1,2 +1,2 @@
 #! /bin/bash
-sed -e "s/\]\[//g" -i cpu.json
+sed -e "s/\]\[/,/g" -i cpu.json
