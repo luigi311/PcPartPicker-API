@@ -10,7 +10,7 @@ sockets={"AM1":27, "AM3":3 ,"AM3+":4,"AM3/AM2+":6,
          "LGA2066":35, "PGA988":18, "TR4":36 }
 
 components = ["motherboard","memory"]
-print("Working on")
+print("Generating")
 for comp in components:
     print(comp)
     comp_info = PPP_API.get_part(comp)
